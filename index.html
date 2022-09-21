@@ -11,31 +11,42 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <a href="./index.html" lang="en" class="logo">Web<span class="logo-dark">Studio</span></a>
-      <nav>
+      <div class="container">
+        <a href="./index.html" lang="en" class="logo">Web<span class="logo-dark">Studio</span></a>
+        <nav>
+          <ul class="list">
+            <li><a href="./index.html" class="link navigation current">Студія</a></li>
+            <li><a href="./portfolio.html" class="link navigation">Портфоліо</a></li>
+            <li><a href="" class="link navigation">Контакти</a></li>
+          </ul>
+        </nav>
         <ul class="list">
-          <li><a href="./index.html" class="link navigation current">Студія</a></li>
-          <li><a href="./portfolio.html" class="link navigation">Портфоліо</a></li>
-          <li><a href="" class="link navigation">Контакти</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="link header-contacts">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="link header-contacts">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link header-contacts">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link header-contacts">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-button">Замовити послугу</button>
+        </div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Переваги</h2>
