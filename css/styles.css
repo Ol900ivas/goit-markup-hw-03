@@ -34,16 +34,58 @@ h6 {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
 
   outline: 3px solid royalblue;
 }
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+  
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
 /* -----------------HEADER--------------------- */
+
+.top {
+  border: 1px solid var(--line-color);
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+
+}
+
+.top > .container {
+  align-items: center;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+}
 
 .logo {
   font-family: var(--logo-font);
@@ -52,7 +94,7 @@ h6 {
   line-height: 1.19;
   color: var(--accent-color);
   text-decoration: none;
-  margin-right: 94px;
+  margin-right: 93px;
 
   outline: 3px solid red;
 }
@@ -61,23 +103,16 @@ h6 {
   color: var(--logo-text-color);
 }
 
-.link {
-  text-decoration: none;
-  font-style: normal;
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
 
 .navigation {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
-  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  
 
   outline: 3px solid red;
 }
@@ -87,11 +122,15 @@ h6 {
 }
 
 .header-contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
-  margin-left: 50px;
+  
 
   outline: 3px solid red;
 }
@@ -167,6 +206,26 @@ h6 {
   padding-bottom: 94px;
 }
 
+.advantages > .container {
+  display: block;
+
+}
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages-item {
+  width: calc((100%-3*30px)/4);
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* .advantages-item:(:nth-last-child(-n+3))  */
+
+
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -175,18 +234,30 @@ h6 {
   color: var(--second-text-color);
   margin-bottom: 10px;
 
- outline: 3px solid red;
+  outline: 3px solid red;
 }
 
 .advantages-descriptions {
-   width: 270px;
-} 
+  width: 270px;
+}
 
 /* -----------------WORK-------------------- */
 
 .work {
   background-color: var(--light-background-color);
   padding-bottom: 94px;
+}
+
+.work > .container {
+  display: block;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-item:not(:last-child) {
+margin-right: 30px;
 }
 
 .section-title {
@@ -208,9 +279,23 @@ h6 {
   padding-bottom: 94px;
 }
 
+.team > .container {
+  display: block;
+}
+
+.cards {
+  display: flex;
+}
+
 .card {
   background-color: var(--light-background-color);
   padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-name {
@@ -220,11 +305,13 @@ h6 {
   color: var(--second-text-color);
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .team-position {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 /* -----------------FOOTER-------------------- */
@@ -235,8 +322,14 @@ h6 {
   padding-bottom: 60px;
 }
 
+.footer > .container {
+  display: block;
+}
+
 .logo-light {
   color: var(--light-text-color);
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .adress {
@@ -257,7 +350,31 @@ h6 {
   color: var(--accent-color);
 }
 
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 /* ======================PORTFOLIO===================== */
+
+.portfolio > .container {
+display: block;
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.filter > .item :not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter>li :not(:last-child) {
+  margin-right: 8px;
+}
 
 .button {
   color: var(--second-text-color);
@@ -281,6 +398,19 @@ h6 {
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+
+.caption {
+  border: 1px solid var(--border-color);
+  border-top: transparent;
+  padding: 20px 24px;
 }
 
 .portfolio .title {
