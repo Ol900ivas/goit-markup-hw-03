@@ -264,7 +264,6 @@ img {
 
 .card {
   background-color: var(--light-background-color);
-  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -274,20 +273,23 @@ img {
   margin-right: 30px;
 }
 
+.card-caption {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--second-text-color);
-  margin-top: 30px;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .team-position {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 /* -----------------FOOTER-------------------- */
@@ -376,21 +378,22 @@ img {
   gap: 30px;
 }
 
-.caption {
+.project-caption {
   border: 1px solid var(--border-color);
   border-top: transparent;
   padding: 20px 24px;
 }
 
-.portfolio .title {
+.project-caption .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--second-text-color);
+  margin-bottom: 4px;
 }
 
-.portfolio .filter-text {
+.project-caption .filter-text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-text-color);
